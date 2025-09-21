@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./index.html#conocimientos">Conocimientos</a></li>
+                <li><a href="./index.html#proyectos">Proyectos</a></li>
+                <li><a href="./index.html#redes">Redes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+        <main>
+
+            <script>
+                function cargaDatos(){
+                    let user = document.getElementById("nombre").value;
+                    alert("Hola " + user + ", gracias por dejar un mensaje");
+                }
+            </script>
+        <div class="contacto" >
+            
+            <h2>Formulario de contacto</h2>
+
+                <form action="#" class="form-contacto">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Juan Perez" >
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="JPerez@gmail.com" >
+                    <br>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribi aca tu mensaje"></textarea>
+                    <br>
+                    <button type="submit" onclick="cargaDatos()">Enviar</button>
+                </form>
+                
+            </div>
+        </main>
+
+     <footer id="redes">
+        <ul >
+            <li >
+                <a href="https://www.instagram.com/lucascoronado/"><img src="./imagenes/instagram.svg" alt="Instagram"></a>
+            </li>
+            <li >
+                <a href="https://www.linkedin.com/in/lucas-coronado-4a4953220/" ><img src="./imagenes/linkedin.svg" alt="Linkedin"></a>
+            </li>
+            <li >
+                <a href="https://github.com/LucasCoronado/" ><img src="./imagenes/github.svg" alt="Github"></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

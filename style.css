@@ -1,0 +1,243 @@
+:root {
+  --color-primario: #8ac1ef; /* Un azul */
+  --color-texto: #0f3155;
+  --color-container: #4ba0e5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    /*height: 100vh;
+    overflow: hidden;*/
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    height: 100%;
+    /*justify-content: space-around;*/
+}
+
+nav ul li{
+    flex: auto;
+    height: 100%;
+    padding: 10px;
+    background-color: var(--color-primario);
+    border: 1px solid black;
+    text-align: center;
+    align-content: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--color-texto);
+}
+
+nav ul li:hover{
+    cursor: pointer;
+    background-color: #c1ddf6;
+}
+
+main{
+    background-color: #3F72AF;
+    /*height:80vh;*/
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    padding:50px 100px 50px 100px;
+    
+}
+
+.container div{
+    /*border: 1px solid black;*/
+    background-color:var(--color-container) ;
+    width: 60%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.container div h1{
+    color: var(--color-texto);
+    font-size: 50px;
+    margin-bottom:20px;
+    align-self: center;
+}
+.descripcion{
+    color: var(--color-texto);
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    }
+
+.container div h2{
+    margin-bottom: 20px;
+}
+
+.container img{
+    height: 90%;
+    margin: 0px 20px 0 20px;
+    border-radius: 10px;
+
+}
+
+#home{
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.conocimientos{
+    height:40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 100px 0 100px;
+    }
+
+.conocimientos ul{
+    background-color: var(--color-container);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.conocimientos ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+.conocimientos ul li img{
+    height: 60px;
+}
+
+.conocimientos ul li a{
+    text-decoration: none;
+}
+
+.proyectos div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 50px;
+    color: var(--color-texto);
+}
+
+#img1{
+    height: 400px;
+    margin: 30px;
+}
+
+#img2{
+    height: 200px;
+    margin: 30px;
+}
+footer{
+    height: 80px;
+    background-color: var(--color-primario);
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+footer ul li{
+    list-style: none;
+    padding: 10px;
+    align-content: center;   
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: var(--color-texto);
+}
+
+footer ul li a img{
+    height: 30px;
+}
+
+.contacto{
+    display: flex;
+    width: 100%;
+    height: 92vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:50px 100px 50px 100px;
+    
+}
+
+.contacto h2{
+    color: var(--color-texto);
+}
+
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 20px 30px;
+    background: var(--color-container);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-contacto label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    align-self: flex-start;
+    color: var(--color-texto);
+}
+
+.form-contacto input,
+.form-contacto textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #b3c6e0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-contacto button {
+    padding: 10px 24px;
+    background: var(--color-primario);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.form-contacto button:hover {
+    background: #3F72AF;
+}
